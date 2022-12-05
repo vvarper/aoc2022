@@ -2,6 +2,7 @@
 def is_contained(range1, range2):
     return int(range1[0]) >= int(range2[0]) and int(range1[1]) <= int(range2[1])
 
+
 # Function to check if two ranges overlap
 def are_overlapped(range1, range2):
     return min(int(range1[1]), int(range2[1])) - max(int(range1[0]), int(range2[0])) >= 0
