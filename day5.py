@@ -8,24 +8,15 @@ def read_initial_stacks(file):
     level_elements = file.readline()[1::4]
     queues = [deque() for _ in range(len(level_elements))]
 
-    # Auxiliary function to push all elements of a level
-    def push_to_queues(elements):
-        for queue, element in zip(queues, elements):
+    # Process the rest of the lines
+    while level_elements[0] != '1':
+        # Push the elements of the current level
+        for queue, element in zip(queues, level_elements):
             if element != ' ':
                 queue.append(element)
 
-    push_to_queues(level_elements)
-
-    # Process the rest of the lines
-    finished = False
-    while not finished:
+        # Read the next level
         level_elements = file.readline()[1::4]
-
-        # Check if the line is the last one
-        if level_elements[0] == '1':
-            finished = True
-        else:  # Push each element to the corresponding queue
-            push_to_queues(level_elements)
 
     return queues
 
@@ -50,7 +41,7 @@ def problem1():
         for line in file:
             repetitions, source, destination = read_move(line, queues)
 
-            for i in range(repetitions):
+            for _ in range(repetitions):
                 destination.appendleft(source.popleft())
 
         return [queue[0] for queue in queues]
