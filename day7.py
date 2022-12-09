@@ -10,9 +10,8 @@ class folder:
 def calculate_space(folders, current_folder):
     folders[current_folder].space = sum(folders[current_folder].files.values())
 
-    if folders[current_folder].subfolders:
-        for subfolder in folders[current_folder].subfolders:
-            folders[current_folder].space += calculate_space(folders, subfolder)
+    for subfolder in folders[current_folder].subfolders:
+        folders[current_folder].space += calculate_space(folders, subfolder)
 
     return folders[current_folder].space
 
