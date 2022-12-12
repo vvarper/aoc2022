@@ -10,7 +10,7 @@ def are_overlapped(range1, range2):
 
 # Solution to Problem 1
 def problem1():
-    with open("data/input4.txt") as file:
+    with open("data/input04.txt") as file:
         containments = 0
         for line in file:  # linea
             elf1, elf2 = [elf.split('-') for elf in line.strip().split(',')]
@@ -22,7 +22,7 @@ def problem1():
 
 # Solution to Problem 2
 def problem2():
-    with open("data/input4.txt") as file:
+    with open("data/input04.txt") as file:
         overlaps = 0
         for line in file:  # linea
             elf1, elf2 = [elf.split('-') for elf in line.strip().split(',')]

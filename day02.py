@@ -22,7 +22,7 @@ def get_move(oponent_choice, required_result):
 
 # Solution to Problem 1
 def problem1():
-    with open("data/input2.txt") as file:
+    with open("data/input02.txt") as file:
         score = 0
         for line in file:
             game = line.strip().split()
@@ -33,7 +33,7 @@ def problem1():
 
 # Solution to Problem 2
 def problem2():
-    with open("data/input2.txt") as file:
+    with open("data/input02.txt") as file:
         score = 0
         for line in file:
             game = line.strip().split()

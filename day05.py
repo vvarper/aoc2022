@@ -33,7 +33,7 @@ def read_move(line, queues):
 
 # Solution to Problem 1
 def problem1():
-    with open("data/input5.txt") as file:
+    with open("data/input05.txt") as file:
 
         queues = read_initial_stacks(file)
         file.readline()
@@ -49,7 +49,7 @@ def problem1():
 
 # Solution to Problem 2
 def problem2():
-    with open("data/input5.txt") as file:
+    with open("data/input05.txt") as file:
         queues = list(read_initial_stacks(file))
         file.readline()
 

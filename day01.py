@@ -1,6 +1,6 @@
 # Solution to Problem 1
 def problem1():
-    with open("data/input1.txt") as file:
+    with open("data/input01.txt") as file:
         max_calories = 0
         current_calories = 0
 
@@ -27,7 +27,7 @@ def problem1():
 
 # Solution to Problem 2
 def problem2():
-    with open("data/input1.txt") as file:
+    with open("data/input01.txt") as file:
         three_max_calories = [0, 0, 0]
         min_max_calories = 0
         current_calories = 0

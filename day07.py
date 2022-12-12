@@ -54,14 +54,14 @@ def load_filesystem_data(file):
 
 # Solution to Problem 1
 def problem1():
-    with open("data/input7.txt") as file:
+    with open("data/input07.txt") as file:
         folders = load_filesystem_data(file)
         return sum([folders[key].space for key in folders if folders[key].space <= 100000])
 
 
 # Solution to Problem 2
 def problem2():
-    with open("data/input7.txt") as file:
+    with open("data/input07.txt") as file:
         folders = load_filesystem_data(file)
 
         total_space = 70000000

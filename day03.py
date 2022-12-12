@@ -8,7 +8,7 @@ def get_priority(item):
 
 # Solution to Problem 1
 def problem1():
-    with open("data/input3.txt") as file:
+    with open("data/input03.txt") as file:
         priority_sum = 0
 
         # Each line is a rucksack
@@ -30,7 +30,7 @@ def problem1():
 
 # Solution to Problem 2
 def problem2():
-    with open("data/input3.txt") as file:
+    with open("data/input03.txt") as file:
 
         priority_sum = 0
 

@@ -14,13 +14,13 @@ def count_letters_until_no_repetition(file, length):
 
 # Solution to Problem 1
 def problem1():
-    with open("data/input6.txt") as file:
+    with open("data/input06.txt") as file:
         return count_letters_until_no_repetition(file, 4)
 
 
 # Solution to Problem 2
 def problem2():
-    with open("data/input6.txt") as file:
+    with open("data/input06.txt") as file:
         return count_letters_until_no_repetition(file, 14)
 
 

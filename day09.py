@@ -20,7 +20,7 @@ apply_move = {'U': lambda x: (x[0], x[1] + 1),
 
 # Solution to Problem 1
 def problem1():
-    with open("data/input9.txt") as file:
+    with open("data/input09.txt") as file:
         head = [0, 0]
         tail = [0, 0]
         visited = set()
@@ -40,7 +40,7 @@ def problem1():
 
 # Solution to Problem 2
 def problem2():
-    with open("data/input9.txt") as file:
+    with open("data/input09.txt") as file:
         n_knots = 10
         knots = [[0, 0] for _ in range(n_knots)]
         visited = set()

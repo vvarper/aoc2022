@@ -3,7 +3,7 @@ import numpy as np
 
 # Solution to Problem 1
 def problem1():
-    with open("data/input8.txt") as file:
+    with open("data/input08.txt") as file:
         data = np.matrix([[int(x) for x in line.strip()] for line in file])
 
         # Count borders
@@ -22,7 +22,7 @@ def problem1():
 
 # Solution to Problem 2
 def problem2():
-    with open("data/input8.txt") as file:
+    with open("data/input08.txt") as file:
         data = np.matrix([[int(x) for x in line.strip()] for line in file])
 
         highest_score = 0
